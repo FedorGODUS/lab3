@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+>
+
+<h:head>
+    <title>Лаба 3</title>
+    <h:outputStylesheet name="stylesMain.css" library="css"/>
+    <h:outputStylesheet name="stylesResponse.css" library="css"/>
+    <h:outputScript name="clock.js" library="js"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet"
+          type="text/css"/>
+</h:head>
+
+<h:body style="background-color: mediumspringgreen ">
+    <header>
+        P3232  Цветков Фёдор
+
+
+    </header>
+    <br/>
+    <div  draggable="false" style="margin-top: 10%; margin-left: 40px">
+        <article class="mainRect animated zoomIn fast" style="background-color: mediumspringgreen">
+
+            <h:form>
+                <div align="center" style="margin-left: 200%" draggable="false">
+                    <p:linkButton outcome="main" action="check" id="check-button" value="Сделана специально для МОЕГО ПРЕПОДА ПИСЬМАКА А. Е."
+                                  ajax="false" styleClass="buttonCheck" style="text-align: center; height: 90px"/>
+                </div>
+            </h:form>
+            <div align="center"  draggable="false" >
+                <canvas id="clock" title="clock" width="300px" height="300px" style="padding-top: 1px"/>
+            </div>
+
+        </article>
+    </div>
+</h:body>
+</html>
